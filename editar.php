@@ -1,4 +1,5 @@
-<?php 
+<?php
+session_start();
 include_once 'includes/header.inc.php';
 include_once 'includes/menu.inc.php'
 ?>
@@ -11,12 +12,13 @@ include_once 'includes/menu.inc.php'
 
 <?php
 	include_once 'banco_de_dados/conexao.php'; 
+
 	$id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
+	$_SESSION['id'] = $id;
 	$querySelect = $link->query("select * from tb_clientes where id='$id'");
 
 	while($registros = $querySelect->fetch_assoc()) {
 
-		$id = $registros['id'];
 		$nome = $registros['nome'];
 		$email = $registros['email'];
 		$telefone = $registros['telefone'];
