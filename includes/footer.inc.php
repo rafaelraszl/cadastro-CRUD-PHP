@@ -3,11 +3,16 @@
 		<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 
 		<!-- INICIALIZAÇÃO JQUERY -->
-		<script type="text/javacript">
+		<script>
 			$(document).ready(function(){
+						$('.dropdown-trigger').dropdown({hover: true});
+			});
+	</script>
+
+<script type="text/javacript">
 			
-		});
-		</script>
+</script>
+
 	</body>
 
 </html>

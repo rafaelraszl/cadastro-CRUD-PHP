@@ -15,10 +15,11 @@ include_once 'includes/menu.inc.php'
 
 	$id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 	$_SESSION['id'] = $id;
-	$querySelect = $link->query("select * from tb_clientes where id='$id'");
+	$querySelect = $link->query("select * from tb_alunos where id='$id'");
 
 	while($registros = $querySelect->fetch_assoc()) {
 
+		$id = $registros['id'];
 		$nome = $registros['nome'];
 		$email = $registros['email'];
 		$telefone = $registros['telefone'];

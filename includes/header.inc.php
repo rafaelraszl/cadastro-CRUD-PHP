@@ -7,7 +7,8 @@
       	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       	<!--CSS DO MATEREALZE-->
 		<link rel="stylesheet" href="materialize/css/materialize.min.css">
-		<title></title>
+		
+		<title>Sistema de Gerenciamento Escolar</title>
 
 	</head>
 

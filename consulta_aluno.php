@@ -6,7 +6,7 @@ include_once 'includes/menu.inc.php'
 
 <div class="row container">
 	<div class="col s12">
-		<h5 class="light">Consultas</h5><hr>
+		<h5 class="light">Consulta de Alunos</h5><hr>
 
 		<table class="striped">
 			<thead>
